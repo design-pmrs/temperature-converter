@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="9532" systemVersion="15A284" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="9530"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="tempconverter" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Please enter temperature in Celcius" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ATu-lX-Fp4">
+                                <rect key="frame" x="49" y="86" width="272" height="21"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="Type..." textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="NCe-7i-ZKh">
+                                <rect key="frame" x="137" y="157" width="97" height="30"/>
+                                <color key="backgroundColor" red="0.092112190109209235" green="0.66666666666666663" blue="0.64401166815211197" alpha="0.22603612588652483" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="97" id="9Tx-pO-1Y6"/>
+                                    <constraint firstAttribute="height" constant="30" id="BiC-kJ-rre"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                <textInputTraits key="textInputTraits"/>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rsh-t9-LQl">
+                                <rect key="frame" x="161" y="255" width="49" height="30"/>
+                                <state key="normal" title="Submit"/>
+                                <connections>
+                                    <action selector="submitClick:" destination="BYZ-38-t0r" eventType="touchUpInside" id="0pK-02-Fbd"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="ATu-lX-Fp4" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="66" id="3x6-DO-on2"/>
+                            <constraint firstItem="ATu-lX-Fp4" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="HJu-ca-cXH"/>
+                            <constraint firstItem="rsh-t9-LQl" firstAttribute="top" secondItem="NCe-7i-ZKh" secondAttribute="bottom" constant="20" id="HaG-AN-Pse"/>
+                            <constraint firstItem="NCe-7i-ZKh" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Whn-v0-995"/>
+                            <constraint firstItem="rsh-t9-LQl" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ib4-un-5J4"/>
+                            <constraint firstItem="NCe-7i-ZKh" firstAttribute="top" secondItem="ATu-lX-Fp4" secondAttribute="bottom" constant="45" id="mOg-aq-FIG"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="temEntry" destination="NCe-7i-ZKh" id="ReL-7r-2QP"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+</document>
